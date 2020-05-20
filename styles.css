@@ -1,3 +1,42 @@
-body {
-  background-color: 000;
+#circleBtn {
+  float: right;
+  height: 200px;
+  width: 150px;
+  margin-top: -200px;
+  margin-left: 2%;
+  margin-right: 4%;
+  background-color: #e1e1e1;
+  border-radius: 5%;
+  outline: none;
+  border-right: 2px solid #8c8c8b;
+  border-bottom: 2px solid #8c8c8b;
+}
+.circleBtnDiv{
+  float: right;
+  display: inline-block;
+}
+.main {
+  background-color: #faf1e8;
+  width: 50%;
+}
+
+.allCircle {
+  border: 1px solid #8c8c8b;
+  border-radius: 5%;
+  width: 77%;
+  height: 200px;
+}
+.circle {
+  float: left;
+  display: inline-block;
+  height: 150px;
+  width: 30%;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin-left: 2%;
+  margin-top: 5%;
+}
+
+.textInsBtn{
+  font-size: 24px;
 }
