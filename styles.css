@@ -40,3 +40,11 @@
 .textInsBtn{
   font-size: 24px;
 }
+
+.yellow{
+  background-color: yellow;
+}
+
+.red, .green{
+  background-color: #8a8a8a;
+}
