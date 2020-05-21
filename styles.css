@@ -48,3 +48,13 @@
 .red, .green{
   background-color: #8a8a8a;
 }
+
+.task2 {
+  float: left;
+  margin: 50px;
+  display: flex;
+}
+
+#numToStrRes{
+  margin-left: 5%;
+}

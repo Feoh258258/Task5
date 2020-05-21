@@ -31,8 +31,37 @@ document.addEventListener("DOMContentLoaded", function(){
     
   }
 
+  //2.1 Number to String
+  const simpleNum = [" ", "один ", "два ", "три ", "четыре ", "пять ", "шесть ", "семь ", "восемь ", "девять "];
 
+  const tensNum = ["десять ", "одиннадцать ", "двенадцать ", "тринадцать ", "четырнадцать ", "пятнадцать ", "шестнадцать ", "семнадцать ", "восемнадцать ", "девятнадцать "];
 
+  const bigNum = [" ", " ", "двадцать ", "тридцать ", "сорок ", "пятьдесят ", "шестьдесят ", "семьдесят ", "восемьдесят ", "девяносто "];
 
+  let numToStrBtn = document.getElementById('numToStrBtn');
+    
+  numToStrBtn.onclick = function() {
+    let numToStr = document.getElementById('numToStr').value;
+    let numToStrRes = document.getElementById('numToStrRes');
+    
+    if(numToStr >= 0 || numToStr <= 9){
+      numToStrRes.innerHTML = simpleNum[numToStr];
+
+  }
+   if(numToStr >= 10 && numToStr <= 19){
+    numToStrTens = numToStr.split('');
+    
+    numToStrRes.innerHTML = tensNum[numToStr[1]];
+
+}
+    if(numToStr >= 20 && numToStr <= 99){
+      //37
+      let numToStrBig = numToStr.split('');
+      //gпллучаем 3 и 7
+      numToStrRes.innerHTML = bigNum[numToStrBig[0]] + simpleNum[numToStrBig[1]];
+      
+    }
+  }//onclick
+  
 
 });//End DOMContentLoaded
