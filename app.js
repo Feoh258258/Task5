@@ -63,5 +63,64 @@ document.addEventListener("DOMContentLoaded", function(){
     }
   }//onclick
   
+  const checkStringBtn = document.getElementById('checkStringBtn');
+
+  checkStringBtn.onclick = function() {
+    let resTask22Value = document.getElementById('resTask22Value');
+    let checkString = document.getElementById('checkString').value;
+    let quantityOfNum = checkString.length-checkString.replace(/\d/gm,'').length;
+
+    let qStr = checkString;
+    let quantityqStr = qStr.length-qStr.replace(/[a-zA-Zа-яА-я]/gm,'').length;
+
+    resTask22Value.innerHTML = 'Количество цифр в строке - '+quantityOfNum+'шт.   ' + 'Количество символов '+quantityqStr+'шт.'
+  }
+
+  const regOfSymBtn = document.getElementById('regOfSymBtn');
+
+  regOfSymBtn.onclick = function(){
+    let regOfSym = document.getElementById('regOfSym').value;
+    let regOfSymRes ='';
+    let resValue = document.getElementById('resValue');
+    for(let i=0; i< regOfSym.length; i++){
+      if(regOfSym[i] === regOfSym[i].toLowerCase()){
+        regOfSymRes += regOfSym[i].toUpperCase();
+      }
+      if(regOfSym[i] === regOfSym[i].toUpperCase()){
+        regOfSymRes += regOfSym[i].toLowerCase();
+      }
+      
+    }
+    resValue.innerHTML = regOfSymRes;
+  }
+
+
+
+
+
+
+
+  // Task 4
+  let taskFourArr = ['Яблоко', 'Банан','Ананас'];
+
+   let mapRes = taskFourArr.map(el=>el[0]);
+   console.log(mapRes);
+
+
+
+
+  //  const reduceLikeAMap = taskFourArr.reduce((red, str)=> {
+  //   let newAddfrr = taskFourArr[0];
+  //   return taskFourArr;
+  //  }, []);
+  //  console.log(reduceLikeAMap);
+ 
+
+
+
+
+
+
+
 
 });//End DOMContentLoaded

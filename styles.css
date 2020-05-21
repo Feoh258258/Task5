@@ -49,12 +49,12 @@
   background-color: #8a8a8a;
 }
 
-.task2 {
+.task21, .task22, .task23 {
   float: left;
   margin: 50px;
   display: flex;
 }
 
-#numToStrRes{
+#numToStrRes, #checkString, #resValue {
   margin-left: 5%;
 }
